@@ -53,7 +53,7 @@ function Navigation() {
     addEventListener("scroll", toggleScroll, { passive: true });
 
     return () => removeEventListener("scroll", toggleScroll);
-  }, []);
+  }, [path]);
 
   return (
     <nav
